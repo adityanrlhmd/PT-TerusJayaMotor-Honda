@@ -1,0 +1,190 @@
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+    padding-top: 0;
+
+    .container {
+        .navbar-brand {
+            img {
+                width: 220px;
+            }
+        }
+
+        .icon-close {
+            display: none;
+            transition: all ease-in-out 0.5s;
+        }
+
+        .icon-menu {
+            // display: block;
+            transition: all ease-in-out 0.5s;
+        }
+
+        .icon-menu.active {
+            display: none;
+        }
+
+        .icon-close.active {
+            display: block;
+        }
+
+        .sidebar,
+        .overlay {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            z-index: 99;
+        }
+
+
+        .overlay {
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.678);
+            visibility: hidden;
+        }
+
+        .sidebar {
+            background-color: #CC0000;
+            left: -100%;
+            max-width: 300px;
+            // padding: 20px;
+            transition: all ease-in-out 0.5s;
+
+            .navbar-nav {
+                .nav-item {
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    margin-right: 30px;
+                    text-decoration: none;
+
+                    .nav-link {
+                        color: white;
+
+                        img {
+                            width: 80%;
+                        }
+                    }
+
+                }
+
+                .wrap-nav {
+                    margin-left: 20px;
+                }
+            }
+
+            .btn-nav {
+                margin-left: 10px;
+                // border-radius: 30px;
+                color: black;
+                background-color: white;
+
+                &:hover {
+                    background-color: black;
+                    color: white;
+                }
+            }
+        }
+
+        .collapse {
+            ul {
+                li {
+                    margin-left: 10px;
+                    text-decoration: none;
+
+                    a {
+                        color: white;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.main-navigation.active .sidebar {
+    left: 0;
+}
+
+.main-navigation.active .overlay {
+    visibility: visible;
+}
+
+main {
+    .jumbotron {
+        .container {
+            background-color: #f3f2f2;
+
+            .row {
+                padding: 25px;
+                color: rgb(99, 97, 97);
+
+                .btn {
+                    background-color: #CC0000;
+                    width: 100%;
+                    color: whitesmoke;
+                    font-size: 26px;
+                }
+            }
+        }
+    }
+
+    .content {
+        margin-bottom: 30px;
+        .container {
+            padding-top: 30px;
+            .link {
+                color: #CC0000;
+                text-decoration: none;
+                
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            h2 {
+                margin-top: 30px;
+                margin-bottom: 20px;
+            }
+            .row {
+                padding-bottom: 60px;
+                border-bottom: 1px solid #c9c9c9;
+                .col-md-3 {
+                    .card {
+                        img {
+                            // width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background-color: #111111;
+
+    .container {
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        .row {
+            .col-md-4 {
+                h5 {
+                    color: whitesmoke;
+                }
+
+                p {
+                    color: whitesmoke;
+                }
+            }
+        }
+    }
+}

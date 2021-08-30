@@ -1,0 +1,949 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon"
+        href="https://mk0hondacengkartgshx.kinstacdn.com/wp-content/themes/honda-cengkareng/images/favicon.png" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/css/motor.css">
+    <title>AHASS</title>
+
+    <script data-cfasync='false' class='jdgm-settings-script'>
+        window.jdgmSettings = {
+            "pagination": 5,
+            "badge_no_review_text": "Belum ada ulasan",
+            "badge_n_reviews_text": "{{ n }} ulasan/ulasan",
+            "badge_star_color": "#ffcc00",
+            "hide_badge_preview_if_no_reviews": true,
+            "widget_title": "Ulasan pelanggan",
+            "widget_open_form_text": "Tulis ulasan",
+            "widget_close_form_text": "Batalkan ulasan",
+            "widget_refresh_page_text": "Refresh halaman",
+            "widget_summary_text": "Berdasarkan ulasan/ulasan {{ number_of_reviews }}",
+            "widget_no_review_text": "Belum ada ulasan",
+            "widget_name_field_text": "Nama",
+            "widget_verified_name_field_text": "Nama",
+            "widget_name_placeholder_text": "Masukkan nama anda (publik)",
+            "widget_required_field_error_text": "Bagian ini diperlukan.",
+            "widget_email_field_text": "E-mail",
+            "widget_verified_email_field_text": "Email (pribadi, tidak ditampilkan)",
+            "widget_email_placeholder_text": "Masukkan email anda (pribadi)",
+            "widget_email_field_error_text": "Silakan isi alamat email.",
+            "widget_rating_field_text": "Rating",
+            "widget_review_title_field_text": "Judul Review",
+            "widget_review_title_placeholder_text": "Beri review anda sebuah judul",
+            "widget_review_body_field_text": "Isi Review",
+            "widget_review_body_placeholder_text": "Tulis detail review anda disini",
+            "widget_pictures_field_text": "Gambar (opsional)",
+            "widget_submit_review_text": "Kirim Review",
+            "widget_submit_verified_review_text": "Kirim Review",
+            "widget_submit_success_msg_with_auto_publish": "Terima kasih telah mengirimkan review anda",
+            "widget_submit_success_msg_no_auto_publish": "Terima kasih telah mengirimkan review anda",
+            "widget_show_default_reviews_out_of_total_text": "Menampilkan {{ n_reviews_shown }} dari ulasan {{ n_reviews }}.",
+            "widget_show_all_link_text": "Tunjukkan semua",
+            "widget_show_less_link_text": "Kurang menunjukkan",
+            "widget_author_said_text": "{{ reviewer_name }} berkata:",
+            "widget_days_text": "{{ n }} hari yang lalu",
+            "widget_weeks_text": "{{ n }} minggu/minggu yang lalu",
+            "widget_months_text": "{{ n }} bulan/bulan yang lalu",
+            "widget_years_text": "{{ n }} tahun/tahun yang lalu",
+            "widget_yesterday_text": "Kemarin",
+            "widget_today_text": "Hari ini",
+            "widget_replied_text": "\u003e\u003e Honda Cengkareng menjawab:",
+            "widget_read_more_text": "Baca lebih banyak",
+            "widget_rating_filter_see_all_text": "Lihat semua ulasan",
+            "widget_sorting_most_recent_text": "Terakhir",
+            "widget_sorting_highest_rating_text": "Rating Tertinggi",
+            "widget_sorting_lowest_rating_text": "Peringkat terendah",
+            "widget_sorting_with_pictures_text": "Hanya gambar",
+            "widget_sorting_most_helpful_text": "Paling membantu",
+            "widget_open_question_form_text": "Berikan pertanyaan",
+            "widget_reviews_subtab_text": "Review",
+            "widget_questions_subtab_text": "Pertanyaan",
+            "widget_question_label_text": "Pertanyaan",
+            "widget_answer_label_text": "Jawaban",
+            "widget_question_placeholder_text": "Tuliskan pertanyaan anda disini",
+            "widget_submit_question_text": "Kirim pertanyaan",
+            "widget_question_submit_success_text": "Terima kasih atas pertanyaan anda.",
+            "widget_star_color": "#ffcc00",
+            "verified_badge_text": "Pembeli Terverifikasi",
+            "verified_badge_placement": "removed",
+            "widget_thumb": true,
+            "widget_location_format": "country_iso_code",
+            "all_reviews_include_out_of_store_products": true,
+            "all_reviews_out_of_store_text": "(di luar toko)",
+            "all_reviews_product_name_prefix_text": "tentang",
+            "enable_review_pictures": true,
+            "enable_question_anwser": true,
+            "widget_theme": "align",
+            "review_date_format": "dd/mm/yy",
+            "widget_product_reviews_subtab_text": "Ulasan produk",
+            "widget_shop_reviews_subtab_text": "Ulasan toko",
+            "widget_sorting_pictures_first_text": "Gambar pertama",
+            "show_pictures_on_all_rev_page_mobile": true,
+            "show_pictures_on_all_rev_page_desktop": true,
+            "featured_carousel_autoslide_interval": 0,
+            "featured_carousel_width": 100,
+            "picture_reminder_submit_button": "Upload Gambar",
+            "enable_review_videos": true,
+            "widget_sorting_videos_first_text": "Video dulu",
+            "widget_review_pending_text": "Menunggu keputusan",
+            "featured_carousel_items_for_large_screen": 4,
+            "remove_microdata_snippet": true,
+            "widget_search_bar_placeholder": "Cari ulasan",
+            "widget_sorting_verified_only_text": "Hanya diverifikasi",
+            "featured_carousel_full_star_background": "#fbcd0a",
+            "all_reviews_page_load_reviews_on": "button_click",
+            "all_reviews_page_load_more_text": "Lihat Review Lainnya",
+            "platform": "woocommerce",
+            "reply_name": "Harga Kredit Motor Honda | Dealer Resmi Sepeda Motor Honda",
+            "footer": true,
+            "autopublish": true,
+            "review_dates": true,
+            "enable_custom_form": false
+        };
+    </script>
+    <style class='jdgm-settings-style'>
+        .jdgm-xx {
+            left: 0
+        }
+
+        :not(.jdgm-prev-badge__stars)>.jdgm-star {
+            color: #ffcc00
+        }
+
+        .jdgm-preview-badge .jdgm-star.jdgm-star {
+            color: #ffcc00
+        }
+
+        .jdgm-prev-badge[data-average-rating='0.00'] {
+            display: none !important
+        }
+
+        .jdgm-author-all-initials {
+            display: none !important
+        }
+
+        .jdgm-author-last-initial {
+            display: none !important
+        }
+
+        .jdgm-rev-widg__title {
+            visibility: hidden
+        }
+
+        .jdgm-rev-widg__summary-text {
+            visibility: hidden
+        }
+
+        .jdgm-prev-badge__text {
+            /* visibility: hidden */
+        }
+
+        .jdgm-rev__replier:before {
+            content: 'hondacengkareng.com'
+        }
+
+        .jdgm-rev__prod-link-prefix:before {
+            content: 'tentang'
+        }
+
+        .jdgm-rev__out-of-store-text:before {
+            content: '(di luar toko)'
+        }
+
+        .jdgm-all-reviews-page__wrapper .jdgm-rev__content {
+            min-height: 120px
+        }
+    </style>
+    <link id="judgeme_widget_align_css" rel="stylesheet" type="text/css" media="all"
+        href="https://cdn.judge.me/shopify_v2/align.css">
+    <style class='jdgm-miracle-styles'>
+        @-webkit-keyframes jdgm-spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+                -ms-transform: rotate(0deg);
+                transform: rotate(0deg)
+            }
+
+            100% {
+                -webkit-transform: rotate(359deg);
+                -ms-transform: rotate(359deg);
+                transform: rotate(359deg)
+            }
+        }
+
+        @keyframes jdgm-spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+                -ms-transform: rotate(0deg);
+                transform: rotate(0deg)
+            }
+
+            100% {
+                -webkit-transform: rotate(359deg);
+                -ms-transform: rotate(359deg);
+                transform: rotate(359deg)
+            }
+        }
+
+        @font-face {
+            font-family: 'JudgemeStar';
+            src: url("data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAAAScAA0AAAAABrAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAAEgAAAABoAAAAcbyQ+3kdERUYAAARgAAAAHgAAACAAMwAGT1MvMgAAAZgAAABGAAAAVi+vS9xjbWFwAAAB8AAAAEAAAAFKwBMjvmdhc3AAAARYAAAACAAAAAj//wADZ2x5ZgAAAkAAAAEJAAABdH33LXtoZWFkAAABMAAAAC0AAAA2BroQKWhoZWEAAAFgAAAAHAAAACQD5QHQaG10eAAAAeAAAAAPAAAAFAYAAABsb2NhAAACMAAAAA4AAAAOAO4AeG1heHAAAAF8AAAAHAAAACAASgAvbmFtZQAAA0wAAADeAAABkorWfVZwb3N0AAAELAAAACkAAABEp3ubLXgBY2BkYADhPPP4OfH8Nl8ZuJkYQODS2fRrCPr/aSYGxq1ALgcDWBoAO60LkwAAAHgBY2BkYGDc+v80gx4TAwgASaAICmABAFB+Arl4AWNgZGBgYGPQYWBiAAIwyQgWc2AAAwAHVQB6eAFjYGRiYJzAwMrAwejDmMbAwOAOpb8ySDK0MDAwMbByMsCBAAMCBKS5pjA4PGB4wMR44P8BBj3GrQymQGFGkBwAjtgK/gAAeAFjYoAAEA1jAwAAZAAHAHgB3crBCcAwDEPRZydkih567CDdf4ZskmLwFBV8xBfCaC4BXkOUmx4sU0h2ngNb9V0vQCxaRKIAevT7fGWuBrEAAAAAAAAAAAA0AHgAugAAeAF9z79Kw1AUx/FzTm7un6QmJtwmQ5Bg1abgEGr/BAqlU6Gju+Cgg1MkQ/sA7Vj7BOnmO/gUvo2Lo14NqIO6/IazfD8HEODtmQCfoANwNsyp2/GJt3WKQrd1NLiYYWx2PBqOsmJMEOznPOTzfSCrhAtbbLdmeFLJV9eKd63WLrZcIcuaEVdssWCKM6pLCfTVOYbz/0pNSMSZKLIZpvh78sAUH6PlMrreTCabP9r+Z/puPZ2ur/RqpQHgh+MIegCnXeM4MRAPjYN//5tj4ZtTjkFqEdmeMShlEJ7tVAly2TAkx6R68Fl4E/aVvn8JqHFQ4JS1434gXKcuL31dDhzs3YbsEOAd/IU88gAAAHgBfY4xTgMxEEVfkk0AgRCioKFxQYd2ZRtpixxgRU2RfhU5q5VWseQ4JdfgAJyBlmNwAM7ABRhZQ0ORwp7nr+eZAa54YwYg9zm3ynPOeFRe8MCrciXOh/KSS76UV5L/iDmrLiS5AeU519wrL3jmSbkS5115yR2fyivJv9kx0ZMZ2RLZw27q87iNQi8EBo5FSPIMw3HqBboi5lKTGAGDp8FKXWP+t9TU01Lj5His1Ba6uM9dTEMwvrFmbf5GC/q2drW3ruXUhhsCiQOjznFlCzYhHUZp4xp76vsvQh89CQAAeAFjYGJABowM6IANLMrEyMTIzMjCXpyRWJBqZshWXJJYBKOMAFHFBucAAAAAAAAB//8AAngBY2BkYGDgA2IJBhBgAvKZGViBJAuYxwAABJsAOgAAeAFjYGBgZACCk535hiD60tn0azAaAEqpB6wAAA==") format("woff");
+            font-weight: normal;
+            font-style: normal
+        }
+
+        .jdgm-star {
+            font-family: 'JudgemeStar';
+            display: inline !important;
+            text-decoration: none !important;
+            padding: 0 4px 0 0 !important;
+            margin: 0 !important;
+            font-weight: bold;
+            opacity: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale
+        }
+
+        .jdgm-star:hover {
+            opacity: 1
+        }
+
+        .jdgm-star:last-of-type {
+            padding: 0 !important
+        }
+
+        .jdgm-star.jdgm--on:before {
+            content: "\e000"
+        }
+
+        .jdgm-star.jdgm--off:before {
+            content: "\e001"
+        }
+
+        .jdgm-star.jdgm--half:before {
+            content: "\e002"
+        }
+
+        .jdgm-widget * {
+            margin: 0;
+            line-height: 1.4;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-overflow-scrolling: touch
+        }
+
+        .jdgm-hidden {
+            display: none !important;
+            visibility: hidden !important
+        }
+
+        .jdgm-temp-hidden {
+            display: none
+        }
+
+        .jdgm-spinner {
+            width: 40px;
+            height: 40px;
+            margin: auto;
+            border-radius: 50%;
+            border-top: 2px solid #eee;
+            border-right: 2px solid #eee;
+            border-bottom: 2px solid #eee;
+            border-left: 2px solid #ccc;
+            -webkit-animation: jdgm-spin 0.8s infinite linear;
+            animation: jdgm-spin 0.8s infinite linear
+        }
+
+        .jdgm-prev-badge {
+            display: block !important
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg main-navigation" style="background-color: #CC0000;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://mk0hondacengkartgshx.kinstacdn.com/wp-content/themes/honda-cengkareng/images/honda-white.png"
+                    alt="">
+            </a>
+            <button class="navbar-toggler shadow-none icon-menu" type="button">
+                <span class="icon-menu"><img width="28" src="src/img/menu.png" alt=""></span>
+            </button>
+
+            <button class="navbar-toggler shadow-none icon-close" type="button">
+                <span class="icon-menu"><img width="28" src="src/img/close.svg" alt=""></span>
+            </button>
+
+            <!-- overlay -->
+            <div class="overlay d-flex d-lg-none"></div>
+            <!-- overlay -->
+
+            <div class="order-lg-2 d-lg-flex w-100 pb-3 pb-lg-0 sidebar container" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active py-3 d-grid" aria-current="page" href="index.html"><img class="mx-auto"
+                                src="https://mk0hondacengkartgshx.kinstacdn.com/wp-content/themes/honda-cengkareng/images/honda-white.png"
+                                alt=""></a>
+                    </li>
+                    <li class="nav-item wrap-nav">
+                        <a class="nav-link active" aria-current="page" href="harga.html">Harga</a>
+                    </li>
+                    <li class="nav-item wrap-nav">
+                        <a class="nav-link active" style="font-weight: 700;" aria-current="page" href="motor.html">Motor</a>
+                    </li>
+                    <li class="nav-item wrap-nav">
+                        <a class="nav-link active" aria-current="page" href="aksesoris.html">Aksesoris</a>
+                    </li>
+                    <li class="nav-item wrap-nav">
+                        <a class="nav-link active" aria-current="page" href="sukucadang.html">Suku Cadang</a>
+                    </li>
+                </ul>
+                <button type="button" class="btn btn-nav">Saya Ingin Pesan</button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="harga.html">Harga</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" style="font-weight: 700;" aria-current="page" href="motor.html">Motor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="aksesoris.html">Aksesoris</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="sukucadang.html">Suku Cadang</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="jumbotron">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <h2>Anda Tertarik Membeli Motor Honda ?</h2>
+                        <p>Team kami siap menjelaskan semua syarat, cara pembayaran dan seluruh proses pembelian.
+                            Apabila anda masih belum jelas, gunakan kesempatan ini untuk menghubungi kami. Kami senang
+                            bisa berbicara dengan anda.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="" class="btn my-auto">
+                            Hubungi Kami
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="container">
+                <p>
+                    <span>
+                        <a class="link" href="">
+                            Home
+                        </a>
+                    </span>
+                    › Motor Honda Indonesia
+                </p>
+                <h2>
+                    Motor Honda Indonesia
+                </h2>
+                <p>
+                    Berikut adalah berbagai motor Honda yang saat ini dijual di Indonesia melalui dealer resmi motor
+                    Honda.
+                </p>
+                <div class="text-center pb-5">
+                    <h5>Motor Bebek Honda</h5>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="d-grid">
+                            <img class="mx-auto"
+                                src="https://mk0hondacengkartgshx.kinstacdn.com/wp-content/uploads/2021/02/revo-x-3.jpg"
+                                alt="">
+                        </div>
+                        <div class="wrap">
+                            <div class="text-center">
+                                <p class="m-0">Honda Revo</p>
+                                <p>Mulai dari Rp. 15,272,000</p>
+                                <div class='jdgm-widget jdgm-preview-badge' data-id='72384'>
+                                    <div style='display:none' class='jdgm-prev-badge' data-average-rating='4.31'
+                                        data-number-of-reviews='32' data-number-of-questions='0'> <span
+                                            class='jdgm-prev-badge__stars' data-score='4.31' tabindex='0'
+                                            aria-label='4.31 stars' role='button'> <span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--half'></span> </span> <span
+                                            class='jdgm-prev-badge__text'> 32 ulasan </span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="d-grid">
+                            <img class="mx-auto"
+                                src="https://mk0hondacengkartgshx.kinstacdn.com/wp-content/uploads/2021/02/supra-x-126.jpg"
+                                alt="">
+                        </div>
+                        <div class="wrap">
+                            <div class="text-center">
+                                <p class="m-0">Honda Supra X</p>
+                                <p>Mulai dari Rp. 18,617,000</p>
+                                <div class='jdgm-widget jdgm-preview-badge' data-id='72384'>
+                                    <div style='display:none' class='jdgm-prev-badge' data-average-rating='4.31'
+                                        data-number-of-reviews='32' data-number-of-questions='0'> <span
+                                            class='jdgm-prev-badge__stars' data-score='4.31' tabindex='0'
+                                            aria-label='4.31 stars' role='button'> <span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--off'></span> </span> <span
+                                            class='jdgm-prev-badge__text'> 118 ulasan </span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="d-grid">
+                            <img class="mx-auto"
+                                src="https://mk0hondacengkartgshx.kinstacdn.com/wp-content/uploads/2021/02/supra-gtr-150.jpg"
+                                alt="">
+                        </div>
+                        <div class="wrap">
+                            <div class="text-center">
+                                <p class="m-0">Honda Supra GTR 150</p>
+                                <p>Mulai dari Rp. 24,442,000</p>
+                                <div class='jdgm-widget jdgm-preview-badge' data-id='72384'>
+                                    <div style='display:none' class='jdgm-prev-badge' data-average-rating='4.31'
+                                        data-number-of-reviews='32' data-number-of-questions='0'> <span
+                                            class='jdgm-prev-badge__stars' data-score='4.31' tabindex='0'
+                                            aria-label='4.31 stars' role='button'> <span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--half'></span> </span> <span
+                                            class='jdgm-prev-badge__text'> 25 ulasan </span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="d-grid">
+                            <img class="mx-auto"
+                                src="https://mk0hondacengkartgshx.kinstacdn.com/wp-content/uploads/2021/02/super-cub-1.jpg"
+                                alt="">
+                        </div>
+                        <div class="wrap">
+                            <div class="text-center">
+                                <p class="m-0">Honda Super Cub</p>
+                                <p>Rp. 73,807,000</p>
+                                <div class='jdgm-widget jdgm-preview-badge' data-id='72384'>
+                                    <div style='display:none' class='jdgm-prev-badge' data-average-rating='4.31'
+                                        data-number-of-reviews='32' data-number-of-questions='0'> <span
+                                            class='jdgm-prev-badge__stars' data-score='4.31' tabindex='0'
+                                            aria-label='4.31 stars' role='button'> <span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--half'></span> </span> <span
+                                            class='jdgm-prev-badge__text'> 32 ulasan </span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center pt-5 pb-5">
+                    <h5>Motor Matik Honda</h5>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-3">
+                        <div class="d-grid">
+                            <img class="mx-auto"
+                                src="https://mk0hondacengkartgshx.kinstacdn.com/wp-content/uploads/2021/02/beat.jpg"
+                                alt="">
+                        </div>
+                        <div class="wrap">
+                            <div class="text-center">
+                                <p class="m-0">Honda BeAT</p>
+                                <p>Mulai dari Rp. 16,827,000</p>
+                                <div class='jdgm-widget jdgm-preview-badge' data-id='72384'>
+                                    <div style='display:none' class='jdgm-prev-badge' data-average-rating='4.31'
+                                        data-number-of-reviews='32' data-number-of-questions='0'> <span
+                                            class='jdgm-prev-badge__stars' data-score='4.31' tabindex='0'
+                                            aria-label='4.31 stars' role='button'> <span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--off'></span> </span> <span
+                                            class='jdgm-prev-badge__text'> 58 ulasan </span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="d-grid">
+                            <img class="mx-auto"
+                                src="https://mk0hondacengkartgshx.kinstacdn.com/wp-content/uploads/2021/02/genio.jpg"
+                                alt="">
+                        </div>
+                        <div class="wrap">
+                            <div class="text-center">
+                                <p class="m-0">Honda Genio</p>
+                                <p>Mulai dari Rp. 18,497,000</p>
+                                <div class='jdgm-widget jdgm-preview-badge' data-id='72384'>
+                                    <div style='display:none' class='jdgm-prev-badge' data-average-rating='4.31'
+                                        data-number-of-reviews='32' data-number-of-questions='0'> <span
+                                            class='jdgm-prev-badge__stars' data-score='4.31' tabindex='0'
+                                            aria-label='4.31 stars' role='button'> <span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--half'></span> </span> <span
+                                            class='jdgm-prev-badge__text'> 3 ulasan </span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="d-grid">
+                            <img class="mx-auto"
+                                src="https://mk0hondacengkartgshx.kinstacdn.com/wp-content/uploads/2021/02/scoopy-1.jpg"
+                                alt="">
+                        </div>
+                        <div class="wrap">
+                            <div class="text-center">
+                                <p class="m-0">Honda Scoopy</p>
+                                <p>Rp. 20,902,000</p>
+                                <div class='jdgm-widget jdgm-preview-badge' data-id='72384'>
+                                    <div style='display:none' class='jdgm-prev-badge' data-average-rating='4.31'
+                                        data-number-of-reviews='32' data-number-of-questions='0'> <span
+                                            class='jdgm-prev-badge__stars' data-score='4.31' tabindex='0'
+                                            aria-label='4.31 stars' role='button'> <span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--off'></span> </span> <span
+                                            class='jdgm-prev-badge__text'> 38 ulasan </span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="d-grid">
+                            <img class="mx-auto"
+                                src="https://mk0hondacengkartgshx.kinstacdn.com/wp-content/uploads/2021/02/vario-125.jpg"
+                                alt="">
+                        </div>
+                        <div class="wrap">
+                            <div class="text-center">
+                                <p class="m-0">Honda Vario 125 eSP</p>
+                                <p>Mulai dari Rp. 21,167,500</p>
+                                <div class='jdgm-widget jdgm-preview-badge' data-id='72384'>
+                                    <div style='display:none' class='jdgm-prev-badge' data-average-rating='4.31'
+                                        data-number-of-reviews='32' data-number-of-questions='0'> <span
+                                            class='jdgm-prev-badge__stars' data-score='4.31' tabindex='0'
+                                            aria-label='4.31 stars' role='button'> <span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--half'></span><span
+                                                class='jdgm-star jdgm--off'></span> </span> <span
+                                            class='jdgm-prev-badge__text'> 115 ulasan </span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="d-grid">
+                            <img class="mx-auto"
+                                src="https://mk0hondacengkartgshx.kinstacdn.com/wp-content/uploads/2020/06/vario-150.jpg"
+                                alt="">
+                        </div>
+                        <div class="wrap">
+                            <div class="text-center">
+                                <p class="m-0">Honda Vario 150 eSP</p>
+                                <p>Mulai dari Rp. 25,497,000</p>
+                                <div class='jdgm-widget jdgm-preview-badge' data-id='72384'>
+                                    <div style='display:none' class='jdgm-prev-badge' data-average-rating='4.31'
+                                        data-number-of-reviews='32' data-number-of-questions='0'> <span
+                                            class='jdgm-prev-badge__stars' data-score='4.31' tabindex='0'
+                                            aria-label='4.31 stars' role='button'> <span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--off'></span><span
+                                                class='jdgm-star jdgm--off'></span> </span> <span
+                                            class='jdgm-prev-badge__text'> 209 ulasan </span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="d-grid">
+                            <img class="mx-auto"
+                                src="https://mk0hondacengkartgshx.kinstacdn.com/wp-content/uploads/2021/02/pcx-hybrid-e-hev-360-32-2-05022021-091908.jpg"
+                                alt="">
+                        </div>
+                        <div class="wrap">
+                            <div class="text-center">
+                                <p class="m-0">Honda PCX</p>
+                                <p>Mulai dari Rp.31,007,000</p>
+                                <div class='jdgm-widget jdgm-preview-badge' data-id='72384'>
+                                    <div style='display:none' class='jdgm-prev-badge' data-average-rating='4.31'
+                                        data-number-of-reviews='32' data-number-of-questions='0'> <span
+                                            class='jdgm-prev-badge__stars' data-score='4.31' tabindex='0'
+                                            aria-label='4.31 stars' role='button'> <span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--half'></span> </span> <span
+                                            class='jdgm-prev-badge__text'> 13 ulasan </span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="d-grid">
+                            <img class="mx-auto"
+                                src="https://mk0hondacengkartgshx.kinstacdn.com/wp-content/uploads/2019/07/adv-150-1.jpg"
+                                alt="">
+                        </div>
+                        <div class="wrap">
+                            <div class="text-center">
+                                <p class="m-0">Honda ADV 150</p>
+                                <p>Mulai dari Rp. 35,348,000</p>
+                                <div class='jdgm-widget jdgm-preview-badge' data-id='72384'>
+                                    <div style='display:none' class='jdgm-prev-badge' data-average-rating='4.31'
+                                        data-number-of-reviews='32' data-number-of-questions='0'> <span
+                                            class='jdgm-prev-badge__stars' data-score='4.31' tabindex='0'
+                                            aria-label='4.31 stars' role='button'> <span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--off'></span> </span> <span
+                                            class='jdgm-prev-badge__text'> 115 ulasan </span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="d-grid">
+                            <img class="mx-auto"
+                                src="https://mk0hondacengkartgshx.kinstacdn.com/wp-content/uploads/2017/05/Motor-Honda-SH150i-1.jpg"
+                                alt="">
+                        </div>
+                        <div class="wrap">
+                            <div class="text-center">
+                                <p class="m-0">Honda SH150i</p>
+                                <p>Rp. 42,062,000</p>
+                                <div class='jdgm-widget jdgm-preview-badge' data-id='72384'>
+                                    <div style='display:none' class='jdgm-prev-badge' data-average-rating='4.31'
+                                        data-number-of-reviews='32' data-number-of-questions='0'> <span
+                                            class='jdgm-prev-badge__stars' data-score='4.31' tabindex='0'
+                                            aria-label='4.31 stars' role='button'> <span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span> </span> <span
+                                            class='jdgm-prev-badge__text'> 1 ulasan </span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="d-grid">
+                            <img class="mx-auto"
+                                src="https://mk0hondacengkartgshx.kinstacdn.com/wp-content/uploads/2021/02/horizon-white-2-05022021-094435-1.jpg"
+                                alt="">
+                        </div>
+                        <div class="wrap">
+                            <div class="text-center">
+                                <p class="m-0">Honda PCX e:HEV</p>
+                                <p>Rp. 43,712,000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="d-grid">
+                            <img class="mx-auto"
+                                src="https://mk0hondacengkartgshx.kinstacdn.com/wp-content/uploads/2019/11/honda-forza-pearl-horizon-white-2.jpg"
+                                alt="">
+                        </div>
+                        <div class="wrap">
+                            <div class="text-center">
+                                <p class="m-0">Honda Forza</p>
+                                <p>Rp. 84,807,000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center pt-5 pb-5">
+                    <h5>Motor Sport Honda</h5>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-3">
+                        <div class="d-grid">
+                            <img class="mx-auto"
+                                src="https://mk0hondacengkartgshx.kinstacdn.com/wp-content/uploads/2019/07/cb-verza.jpg"
+                                alt="">
+                        </div>
+                        <div class="wrap">
+                            <div class="text-center">
+                                <p class="m-0">Honda CB150 Verza</p>
+                                <p>Mulai dari Rp. 20,452,000</p>
+                                <div class='jdgm-widget jdgm-preview-badge' data-id='72384'>
+                                    <div style='display:none' class='jdgm-prev-badge' data-average-rating='4.31'
+                                        data-number-of-reviews='32' data-number-of-questions='0'> <span
+                                            class='jdgm-prev-badge__stars' data-score='4.31' tabindex='0'
+                                            aria-label='4.31 stars' role='button'> <span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--off'></span> </span> <span
+                                            class='jdgm-prev-badge__text'> 41 ulasan </span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="d-grid">
+                            <img class="mx-auto"
+                                src="https://mk0hondacengkartgshx.kinstacdn.com/wp-content/uploads/2015/07/honda-sonic-150r-racing-red.jpg"
+                                alt="">
+                        </div>
+                        <div class="wrap">
+                            <div class="text-center">
+                                <p class="m-0">Honda Sonic 150R</p>
+                                <p>Mulai dari Rp. 23,842,000</p>
+                                <div class='jdgm-widget jdgm-preview-badge' data-id='72384'>
+                                    <div style='display:none' class='jdgm-prev-badge' data-average-rating='4.31'
+                                        data-number-of-reviews='32' data-number-of-questions='0'> <span
+                                            class='jdgm-prev-badge__stars' data-score='4.31' tabindex='0'
+                                            aria-label='4.31 stars' role='button'> <span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--half'></span> </span> <span
+                                            class='jdgm-prev-badge__text'> 20 ulasan </span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="d-grid">
+                            <img class="mx-auto"
+                                src="https://mk0hondacengkartgshx.kinstacdn.com/wp-content/uploads/2018/08/New-CB150R-StreetFire.jpg"
+                                alt="">
+                        </div>
+                        <div class="wrap">
+                            <div class="text-center">
+                                <p class="m-0">Honda New CB150R StreetFire</p>
+                                <p>Mulai dari Rp. 29,862,000</p>
+                                <div class='jdgm-widget jdgm-preview-badge' data-id='72384'>
+                                    <div style='display:none' class='jdgm-prev-badge' data-average-rating='4.31'
+                                        data-number-of-reviews='32' data-number-of-questions='0'> <span
+                                            class='jdgm-prev-badge__stars' data-score='4.31' tabindex='0'
+                                            aria-label='4.31 stars' role='button'> <span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--off'></span> </span> <span
+                                            class='jdgm-prev-badge__text'> 104 ulasan </span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="d-grid">
+                            <img class="mx-auto"
+                                src="https://mk0hondacengkartgshx.kinstacdn.com/wp-content/uploads/2021/02/2021-cbr150r-400x300-1.jpg"
+                                alt="">
+                        </div>
+                        <div class="wrap">
+                            <div class="text-center">
+                                <p class="m-0">Honda All New CBR 150R</p>
+                                <p>Mulai dari Rp. 36,342,000</p>
+                                <div class='jdgm-widget jdgm-preview-badge' data-id='72384'>
+                                    <div style='display:none' class='jdgm-prev-badge' data-average-rating='4.31'
+                                        data-number-of-reviews='32' data-number-of-questions='0'> <span
+                                            class='jdgm-prev-badge__stars' data-score='4.31' tabindex='0'
+                                            aria-label='4.31 stars' role='button'> <span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--off'></span> </span> <span
+                                            class='jdgm-prev-badge__text'> 41 ulasan </span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="d-grid">
+                            <img class="mx-auto"
+                                src="https://mk0hondacengkartgshx.kinstacdn.com/wp-content/uploads/2019/11/honda-crf-150l-New-Extreme-Grey-2-2.jpg"
+                                alt="">
+                        </div>
+                        <div class="wrap">
+                            <div class="text-center">
+                                <p class="m-0">Honda CRF150L</p>
+                                <p>Rp. 35,757,000</p>
+                                <div class='jdgm-widget jdgm-preview-badge' data-id='72384'>
+                                    <div style='display:none' class='jdgm-prev-badge' data-average-rating='4.31'
+                                        data-number-of-reviews='32' data-number-of-questions='0'> <span
+                                            class='jdgm-prev-badge__stars' data-score='4.31' tabindex='0'
+                                            aria-label='4.31 stars' role='button'> <span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span> </span> <span
+                                            class='jdgm-prev-badge__text'> 4 ulasan </span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="d-grid">
+                            <img class="mx-auto"
+                                src="https://mk0hondacengkartgshx.kinstacdn.com/wp-content/uploads/2021/02/cbr250rr-2.jpg"
+                                alt="">
+                        </div>
+                        <div class="wrap">
+                            <div class="text-center">
+                                <p class="m-0">Honda CBR 250RR</p>
+                                <p>Mulai dari Rp. 61,862,000</p>
+                                <div class='jdgm-widget jdgm-preview-badge' data-id='72384'>
+                                    <div style='display:none' class='jdgm-prev-badge' data-average-rating='4.31'
+                                        data-number-of-reviews='32' data-number-of-questions='0'> <span
+                                            class='jdgm-prev-badge__stars' data-score='4.31' tabindex='0'
+                                            aria-label='4.31 stars' role='button'> <span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--half'></span> </span> <span
+                                            class='jdgm-prev-badge__text'> 13 ulasan </span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="d-grid">
+                            <img class="mx-auto"
+                                src="https://mk0hondacengkartgshx.kinstacdn.com/wp-content/uploads/2019/07/Honda-Monkey-2.jpg"
+                                alt="">
+                        </div>
+                        <div class="wrap">
+                            <div class="text-center">
+                                <p class="m-0">Honda Monkey</p>
+                                <p>Rp. 79,507,000</p>
+                                <div class='jdgm-widget jdgm-preview-badge' data-id='72384'>
+                                    <div style='display:none' class='jdgm-prev-badge' data-average-rating='4.31'
+                                        data-number-of-reviews='32' data-number-of-questions='0'> <span
+                                            class='jdgm-prev-badge__stars' data-score='4.31' tabindex='0'
+                                            aria-label='4.31 stars' role='button'> <span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--on'></span><span
+                                                class='jdgm-star jdgm--off'></span> </span> <span
+                                            class='jdgm-prev-badge__text'> 115 ulasan </span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="d-grid">
+                            <img class="mx-auto"
+                                src="https://mk0hondacengkartgshx.kinstacdn.com/wp-content/uploads/2017/02/honda-crf250-rally.jpg"
+                                alt="">
+                        </div>
+                        <div class="wrap">
+                            <div class="text-center">
+                                <p class="m-0">Honda CRF250 Rally</p>
+                                <p>Rp. 88,507,000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="wrap mx-auto">
+                        <h5 class="mb-4">METODE PEMBAYARAN</h5>
+                        <img class="mb-4"
+                            src="https://mk0hondacengkartgshx.kinstacdn.com/wp-content/uploads/2021/01/metode-pembayaran-2.png"
+                            alt="">
+                        <h5 class="mb-4">METODE PENGIRIMAN</h5>
+                        <img class="mb-4"
+                            src="https://mk0hondacengkartgshx.kinstacdn.com/wp-content/uploads/2021/01/metode-pengiriman-2.png"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>LOKASI KAMI</h5>
+                    <iframe class="mb-4"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.6034252535737!2d106.92176071434766!3d-6.937908969842014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68481a0d327873%3A0xa647e70fd78ea0ac!2sToko%20Satelit%20Terus%20Jaya%20Motor!5e0!3m2!1sen!2sus!4v1630296059991!5m2!1sen!2sus"
+                        width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <p>Alamat Kami: <br>
+                        Jl. Pelabuhan II No.202, Warudoyong, Kec. Sukabumi, Kota Sukabumi, Jawa Barat 43131,
+                        Indonesia
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <script src="src/js/swiped-events.min.js"></script>
+    <script src="src/js/script.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  padding-top: 0;
+}
+
+nav .container .navbar-brand img {
+  width: 220px;
+}
+
+nav .container .icon-close {
+  display: none;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+}
+
+nav .container .icon-menu {
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+}
+
+nav .container .icon-menu.active {
+  display: none;
+}
+
+nav .container .icon-close.active {
+  display: block;
+}
+
+nav .container .sidebar,
+nav .container .overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 99;
+}
+
+nav .container .overlay {
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.678);
+  visibility: hidden;
+}
+
+nav .container .sidebar {
+  background-color: #CC0000;
+  left: -100%;
+  max-width: 300px;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+}
+
+nav .container .sidebar .navbar-nav .nav-item {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 30px;
+  text-decoration: none;
+}
+
+nav .container .sidebar .navbar-nav .nav-item .nav-link {
+  color: white;
+}
+
+nav .container .sidebar .navbar-nav .nav-item .nav-link img {
+  width: 80%;
+}
+
+nav .container .sidebar .navbar-nav .wrap-nav {
+  margin-left: 20px;
+}
+
+nav .container .sidebar .btn-nav {
+  margin-left: 10px;
+  color: black;
+  background-color: white;
+}
+
+nav .container .sidebar .btn-nav:hover {
+  background-color: black;
+  color: white;
+}
+
+nav .container .collapse ul li {
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+nav .container .collapse ul li a {
+  color: white;
+}
+
+nav .container .collapse ul li a:hover {
+  text-decoration: underline;
+}
+
+.main-navigation.active .sidebar {
+  left: 0;
+}
+
+.main-navigation.active .overlay {
+  visibility: visible;
+}
+
+main .jumbotron .container {
+  background-color: #f3f2f2;
+}
+
+main .jumbotron .container .row {
+  padding: 25px;
+  color: #636161;
+}
+
+main .jumbotron .container .row .btn {
+  background-color: #CC0000;
+  width: 100%;
+  color: whitesmoke;
+  font-size: 26px;
+}
+
+main .content {
+  margin-bottom: 30px;
+}
+
+main .content .container {
+  border-bottom: 1px solid #c9c9c9;
+  padding-top: 30px;
+}
+
+main .content .container .link {
+  color: #CC0000;
+  text-decoration: none;
+}
+
+main .content .container .link:hover {
+  text-decoration: underline;
+}
+
+main .content .container h2 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+main .content .container .table-price h5 {
+  color: #CC0000;
+}
+
+main .content .container .table-price table tbody tr .product a {
+  color: #CC0000;
+  text-decoration: none;
+}
+
+main .content .container .table-price table tbody tr .product a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #111111;
+}
+
+footer .container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+footer .container .row .col-md-4 h5 {
+  color: whitesmoke;
+}
+
+footer .container .row .col-md-4 p {
+  color: whitesmoke;
+}
+/*# sourceMappingURL=harga.css.map */
